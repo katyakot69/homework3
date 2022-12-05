@@ -1,20 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-
-        int s = 1100;
-        int p = 1001;
+        int check = 1100;
+        int payment = 1001;
 
         int bonus;
-        if (p >= 1001) {
-            bonus = p / 100;
+        if (payment >= 1001) {
+            bonus = payment / 100;
         } else {
             bonus = 0;
         }
-        int b = s + p + bonus;
+        int balance = check + payment + bonus;
 
-        System.out.println("Ваш счёт пополнен. Ваш баланс составляет " + b + " рублей");
+        System.out.println("Ваш счёт пополнен. Ваш баланс составляет " + balance + " рублей");
         System.out.println("Вам начислено " + bonus + " рублей");
     }
-
-
 }
